@@ -1,6 +1,9 @@
 function syn($cmd) {
     Get-Command $cmd -Syntax
 }
+# or (Get-Command $cmd).Definition
+
+# xxx
 
 # git init
 # git add Microsoft.PowerShell_profile.ps1
