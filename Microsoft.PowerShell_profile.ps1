@@ -1,6 +1,7 @@
-function syn($cmd) {
-    Get-Command $cmd -Syntax   # or (Get-Command $cmd).Definition
-}
+function syntax($cmd) { Get-Command $cmd -Syntax }   # or (Get-Command $cmd).Definition
+function parameter($cmd, $parameter) { Get-Help $cmd -Parameter $parameter }
+
+# or these could be for the common-module
 
 # git init
 # git add Microsoft.PowerShell_profile.ps1
